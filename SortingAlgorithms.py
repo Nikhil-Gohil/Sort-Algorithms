@@ -8,20 +8,20 @@ pp = pprint.PrettyPrinter(indent=4)
 
 def testSelectionSort(myarray):
     start_time = time.time()
-    sorted = SelectionSort(myarray)
+    SelectionSort(myarray)
     #pp.pprint(sorted)
     print("SelectionSort took {:.5f} to complete!".format(time.time()-start_time))
 
 def testBubbleSort(myarray):
     start_time = time.time()
-    sorted = BubbleSort(myarray)
-    pp.pprint(sorted)
+    BubbleSort(myarray)
+    #pp.pprint(sorted)
     print("BubbleSort took {:.5f} to complete!".format(time.time()-start_time))
 
 def testInsertionSort(myarray):
     start_time = time.time()
-    sorted = InsertionSort(myarray)
-    pp.pprint(sorted)
+    InsertionSort(myarray)
+    #pp.pprint(sorted)
     print("InsertionSort took {:.5f} to complete!".format(time.time()-start_time))
 
 def main():
