@@ -1,5 +1,5 @@
-from SelectionSort import SelectionSort
-from BubbleSort import BubbleSort
+from Algorithms.SelectionSort import SelectionSort
+from Algorithms.BubbleSort import BubbleSort
 import numpy as np
 import time
 def testSelectionSort(myarray):
@@ -13,7 +13,7 @@ def testBubbleSort(myarray):
     print("BubbleSort took {:.5f} to complete!".format(time.time()-start_time))
 
 def main():
-    array = np.random.randint(-100000, 100000, 10000)
+    array = np.random.randint(-100000, 100000, 1000)
     testSelectionSort(array)
     testBubbleSort(array)
 
