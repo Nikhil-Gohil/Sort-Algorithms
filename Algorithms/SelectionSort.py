@@ -8,10 +8,3 @@ def SelectionSort(myarray):
         myarray[i] = myarray[min_index]
         myarray[min_index] = intermediate
     return(myarray)
-
-def main():
-    myarray = [12, 2, 36, 45, 1, 8, 198, 64]
-    print(SelectionSort(myarray))
-
-if __name__ == "__main__":
-    main()
