@@ -1,5 +1,6 @@
 from Algorithms.SelectionSort import SelectionSort
 from Algorithms.BubbleSort import BubbleSort
+from Algorithms.BubbleSort import BubbleSortRecursive
 from Algorithms.InsertionSort import InsertionSort
 import numpy as np
 import time
@@ -18,6 +19,12 @@ def testBubbleSort(myarray):
     #pp.pprint(sorted)
     print("BubbleSort took {:.5f} to complete!".format(time.time()-start_time))
 
+def testBubbleSortRecursive(myarray):
+    start_time = time.time()
+    sorted = BubbleSortRecursive(myarray)
+    pp.pprint(sorted)
+    print("Recursive BubbleSort took {:.5f} to complete!".format(time.time()-start_time))
+
 def testInsertionSort(myarray):
     start_time = time.time()
     InsertionSort(myarray)
@@ -25,9 +32,10 @@ def testInsertionSort(myarray):
     print("InsertionSort took {:.5f} to complete!".format(time.time()-start_time))
 
 def main():
-    array = np.random.randint(0, 100000, 20)
+    array = np.random.randint(0, 100000, 2500)
     testSelectionSort(array)
     testBubbleSort(array)
+    testBubbleSortRecursive(array)
     testInsertionSort(array)
 
 
