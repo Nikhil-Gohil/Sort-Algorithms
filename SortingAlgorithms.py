@@ -26,7 +26,7 @@ def testBubbleSort(myarray):
 def testBubbleSortRecursive(myarray):
     start_time = time.time()
     sorted = BubbleSortRecursive(myarray)
-    pp.pprint(sorted)
+    #pp.pprint(sorted)
     print(
         "Recursive BubbleSort took {:.5f} to complete!".format(time.time() - start_time)
     )
